@@ -1,0 +1,70 @@
+.player {
+    height: 100px;
+    // width: 80%;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    display: grid;
+    position: fixed;
+    bottom: 0;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trackInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.trackInfoTrackName {
+    color: white;
+    // @media (max-width: 800px) {
+    //     display: none;
+    // }
+}
+
+.trackInfoTrackArtists{
+    color: #b3b3b3;
+    @media (max-width: 1078px) {
+        display: none;
+    }
+}
+
+.controller{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+}
+
+.value{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.inputRange{
+    width: 15rem;
+    border-radius: 2rem;
+    height: 0.5rem;
+     @media (max-width: 800px) {
+        width: 10rem;
+    }
+    @media (max-width: 700px) {
+        width: 6rem;
+    }
+    @media (max-width: 600px) {
+        width: 10rem;
+    }
+    @media (max-width: 500px) {
+        width: 6rem;
+    }
+}

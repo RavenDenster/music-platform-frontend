@@ -1,0 +1,90 @@
+.mainCard {
+    width: 900px;
+    background-color: rgba(13, 13, 13, 0);
+    min-height: 1000px; 
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0), 0px 1px 1px 0px rgba(0,0,0,0), 0px 1px 3px 0px rgba(0,0,0,0);
+}
+
+.title {
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    display: flex
+}
+
+.pagin{
+    margin-bottom: 80px;
+}
+
+.paginItem {
+    color: white; 
+    border: 1px solid white;
+}
+
+.white {
+    color: white;
+}
+
+.green {
+    color: green;
+}
+
+.button {
+    font-size: 32px; 
+    color: white; 
+    margin: 10px 0px 0px 20px;
+}
+
+.button2 {
+    color: white;
+    margin: 20px 0px;
+}
+
+.comments {
+    color: white; 
+    padding: 20px;
+    background: black; 
+    border-radius: 10px; 
+    margin-bottom: 20px;
+    border: 1px solid white;
+}
+
+.gridID {
+    margin: 20px 0; 
+    align-items: center;
+}
+
+.gridIDMin {
+    margin: 20px 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    margin-left: 30px;
+    color: white; 
+    opacity: .8;
+}
+
+.titleTextTrack  {
+    color: white;
+}
+
+.titleTextTrackMin  {
+    color: white;
+    text-align: center;
+}
+
+.textTrack {
+    color: gray;
+    max-width: 350px;
+}
+
+.textTrackMin {
+    color: white; 
+    opacity: .8; 
+    text-align: center;
+}

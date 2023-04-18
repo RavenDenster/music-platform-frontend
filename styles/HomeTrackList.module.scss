@@ -1,0 +1,27 @@
+
+.headerRow {
+  display: grid;
+  grid-template-columns: 0.3fr 3fr 2fr 0.1fr;
+  margin: 1rem 0 0 0;
+  color: #dddcdc;
+  top: 15vh;
+  padding: 1rem 3rem;
+  transition: 0.3s ease-in-out;
+  background-color: none;
+}
+.tracks {
+  margin: 0 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+}
+.album{
+  @media (max-width: 916px) {
+    display: none;
+  }
+}
+
+.time{
+  @media (max-width: 916px) {
+    text-align: center;
+  }
+}
