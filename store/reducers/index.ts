@@ -5,7 +5,7 @@ import { trackReducer } from './trackReducer';
 import { albumReducer } from './albumReducer';
 import { musicHomeReducer } from './musicHomeReducer';
 import { authReducer } from './authReducer';
-import {wrapper} from '../index'
+// import {wrapper} from '../index'
 
 const rootReducer = combineReducers({
     player: playerReducer,
@@ -24,7 +24,7 @@ export const reducer = (state, action) => {
       if (state.count) nextState.count = state.count;
       return nextState;
     } else {
-      const wrap = wrapper.useWrappedStore(state)
+      // const wrap = wrapper.useWrappedStore(state)
       return rootReducer(state, action);
     }
 };
