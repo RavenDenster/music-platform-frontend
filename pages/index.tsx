@@ -21,6 +21,7 @@ const Index = () => {
        <MainLayout>       
               <SelectHome/>
               <AlbumHome/>
+              <AlbumHome/>
               <Box className={styles.flex}>
                 <HomePlayer/>
               </Box>
