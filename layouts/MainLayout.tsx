@@ -32,7 +32,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({children, title, description, ke
         <Container className={matches ? styles.container : styles.containerMin}>
             {children} 
         </Container>
-        <Player/>
+        {/* <Player/> */}
         <style jsx>
           {`
             .root-style {
