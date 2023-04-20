@@ -90,11 +90,11 @@ const HomePlayer = () => {
                 <SkipPreviousIcon onClick={() => changeTrack("previous")} />
             </div>
             <div className="state">
-                {/* <IconButton onClick={play}>
+                <IconButton>
                     {!pauseHome
                     ? <Pause sx={{color: 'white'}}/>
                     : <PlayArrow sx={{color: 'white'}}/>}
-                </IconButton> */}
+                </IconButton>
             </div>
             <div className="next">
               <SkipNextIcon onClick={() => changeTrack("next")} />
