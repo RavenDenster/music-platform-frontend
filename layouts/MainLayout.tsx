@@ -1,4 +1,3 @@
-import { Container } from '@mui/system'
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Player from '../components/Player';
@@ -6,6 +5,7 @@ import Head from 'next/head'
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import styles from '../styles/Common.module.scss'
+import { Box, Container } from '@mui/material';
 
 interface MainLayoutProps {
     children: React.ReactNode;
