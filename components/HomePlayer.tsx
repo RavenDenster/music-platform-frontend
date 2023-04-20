@@ -85,21 +85,21 @@ const HomePlayer = () => {
             </div>
         </div>
 
-        {/* <div className={styles.controller}>
+        <div className={styles.controller}>
             <div className="previous">
                 <SkipPreviousIcon onClick={() => changeTrack("previous")} />
             </div>
             <div className="state">
-                <IconButton onClick={play}>
+                {/* <IconButton onClick={play}>
                     {!pauseHome
                     ? <Pause sx={{color: 'white'}}/>
                     : <PlayArrow sx={{color: 'white'}}/>}
-                </IconButton>
+                </IconButton> */}
             </div>
             <div className="next">
               <SkipNextIcon onClick={() => changeTrack("next")} />
             </div>
-        </div> */}
+        </div>
 
         <div className={styles.value}>
             <input className={styles.inputRange} type="range" onChange={changeVolume} value={volumeHome} min={0} max={100} />
