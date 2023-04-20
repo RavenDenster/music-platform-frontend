@@ -20,8 +20,8 @@ const Index = () => {
     <>
        {/* <MainLayout>        */}
               <SelectHome/>
-              {/* <AlbumHome/>
-              <Box className={styles.flex}>
+              <AlbumHome/>
+              {/* <Box className={styles.flex}>
                 <HomePlayer/>
               </Box> */}
         {/* </MainLayout> */}
