@@ -29,8 +29,10 @@ const MainLayout: React.FC<MainLayoutProps> = ({children, title, description, ke
           <meta name='viewport' content='width=device-width, initial=scale=1'/>
         </Head>
         <Navbar/>
-        <Container className={matches ? styles.container : styles.containerMin}>
+        <Container >
+          <Box className={matches ? styles.container : styles.containerMin}>
             {children} 
+          </Box>
         </Container>
         {/* <Player/> */}
         <style jsx>
