@@ -18,13 +18,13 @@ const Index = () => {
  
   return (
     <>
-       {/* <MainLayout>       
-              <SelectHome/>
+       <MainLayout>       
+              {/* <SelectHome/>
               <AlbumHome/>
               <Box className={styles.flex}>
                 <HomePlayer/>
-              </Box>
-        </MainLayout> */}
+              </Box> */}
+        </MainLayout>
     </>
   )
 }
