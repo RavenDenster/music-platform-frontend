@@ -74,9 +74,9 @@ const HomePlayer = () => {
         dispatch(changeVolumePlay(Number(e.target.value)))
     }
 
-    if(!audioHome) {
-        return (<div></div>)
-      }
+    // if(!audioHome) {
+    //     return (<div></div>)
+    //   }
  
   return (
     <div className={styles.player}>
@@ -97,14 +97,14 @@ const HomePlayer = () => {
                 <SkipPreviousIcon onClick={() => changeTrack("previous")} />
             </div>
             <div className="state">
-                <IconButton onClick={play}>
+                <div onClick={play}>
                     {/* {!pauseHome
                     ? <Pause sx={{color: 'white'}}/>
                     : <PlayArrow sx={{color: 'white'}}/>} */}
                       {!pauseHome
                     ? <div>+</div>
                     : <div>-</div>}
-                </IconButton>
+                </div>
             </div>
             <div className="next">
               <SkipNextIcon onClick={() => changeTrack("next")} />
