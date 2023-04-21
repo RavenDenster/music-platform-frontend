@@ -98,12 +98,12 @@ const HomePlayer = () => {
             </div>
             <div className="state">
                 <div onClick={play}>
-                    {/* {!pauseHome
+                    {!pauseHome
                     ? <Pause sx={{color: 'white'}}/>
-                    : <PlayArrow sx={{color: 'white'}}/>} */}
-                      {!pauseHome
+                    : <PlayArrow sx={{color: 'white'}}/>}
+                      {/* {!pauseHome
                     ? <div>+</div>
-                    : <div>-</div>}
+                    : <div>-</div>} */}
                 </div>
             </div>
             <div className="next">
