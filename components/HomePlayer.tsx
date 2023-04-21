@@ -57,7 +57,7 @@ const HomePlayer = () => {
     }
 
     const play = () => {
-        console.log(pauseHome)
+        console.log(pauseHome, audioHome)
         if (pauseHome) {
             setTimeout(function () {      
                 dispatch(changeHomePlay())
