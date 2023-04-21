@@ -57,6 +57,7 @@ const HomePlayer = () => {
     }
 
     const play = () => {
+        console.log(pauseHome)
         if (pauseHome) {
             dispatch(changeHomePlay())
             audioHome.play()
