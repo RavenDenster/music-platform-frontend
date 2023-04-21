@@ -66,14 +66,14 @@ const Player = () => {
     setCurrentTime(Number(e.target.value))
   }
 
-  // if(!active) {
-  //   return null
-  // }
+  if(!active) {
+    return null
+  }
 
   return (
     <div className={styles.wrapperplayer}>
       <div className={styles.player}>
-        {/* <Box className={styles.play}>
+        <Box className={styles.play}>
           <IconButton onClick={play}>
             {!pause
               ? <Pause className={stylesList.pauseTrackIt}/>
@@ -90,7 +90,7 @@ const Player = () => {
         <Box className={styles.sound}>
           <VolumeUp className={stylesCom.volume}/>
           <TrackProgress left={volume} right={100} onChange={changeVolume}/>
-        </Box> */}
+        </Box>
       </div>
     </div>
   )
