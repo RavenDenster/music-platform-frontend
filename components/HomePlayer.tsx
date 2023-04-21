@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useTypedSelector } from '../hooks/useTypedSelector'
 import styles from '../styles/HomePlayer.module.scss'
 import PlayArrow from '@mui/icons-material/PlayArrow';
@@ -16,7 +16,7 @@ const HomePlayer = () => {
   const { pauseHome, playerTrack, volumeHome, tracks, token } = useTypedSelector(state => state.musicHome) 
   const dispatch = useDispatch()
   const dispatc = useDispatch() as NextThunkDispatch
-
+  console.log(pauseHome, audioHome)
     useEffect(() => {
         if(!audioHome) {
             audioHome = new Audio()
@@ -74,10 +74,6 @@ const HomePlayer = () => {
         audioHome.volume = Number(e.target.value) / 100
         dispatch(changeVolumePlay(Number(e.target.value)))
     }
-
-    if(!audioHome) {
-        return (<div></div>)
-      }
  
   return (
     <div className={styles.player}>
@@ -102,9 +98,6 @@ const HomePlayer = () => {
                     {!pauseHome
                     ? <Pause sx={{color: 'white'}}/>
                     : <PlayArrow sx={{color: 'white'}}/>}
-                      {/* {!pauseHome
-                    ? <div>+</div>
-                    : <div>-</div>} */}
                 </div>
             </div>
             <div className="next">
