@@ -1,6 +1,10 @@
 import React, {useEffect} from 'react'
-import { IconButton, Grid, Box} from '@mui/material';
-import { Pause, PlayArrow, VolumeUp } from '@mui/icons-material'
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import IconButton from '@mui/material/IconButton';
+import PlayArrow from '@mui/icons-material/PlayArrow';
+import Pause from '@mui/icons-material/Pause';
+import VolumeUp from '@mui/icons-material/VolumeUp';
 import styles from '../styles/Player.module.scss'
 import TrackProgress from './TrackProgress';
 import { useTypedSelector } from '../hooks/useTypedSelector';
@@ -72,7 +76,7 @@ const Player = () => {
 
   return (
     <div className={styles.wrapperplayer}>
-      {/* <div className={styles.player}>
+      <div className={styles.player}>
         <Box className={styles.play}>
           <IconButton onClick={play}>
             {!pause
@@ -91,7 +95,7 @@ const Player = () => {
           <VolumeUp className={stylesCom.volume}/>
           <TrackProgress left={volume} right={100} onChange={changeVolume}/>
         </Box>
-      </div> */}
+      </div>
     </div>
   )
 }
