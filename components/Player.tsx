@@ -66,9 +66,9 @@ const Player = () => {
     setCurrentTime(Number(e.target.value))
   }
 
-  if(!active) {
-    return null
-  }
+  // if(!active) {
+  //   return null
+  // }
 
   return (
     <div className={styles.wrapperplayer}>
