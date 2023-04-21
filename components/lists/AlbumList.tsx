@@ -1,5 +1,5 @@
-import { Grid } from '@mui/material'
-import { Box } from '@mui/system'
+import Grid from '@mui/material/Grid'
+import Box from '@mui/material/Box';
 import styles from '../../styles/TrackItem.module.scss'
 import React from 'react'
 import { IAlbum } from '../../types/album'

@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from '../../styles/TrackItem.module.scss'
-import { Card, IconButton, Grid } from '@mui/material';
-import {Delete,} from '@mui/icons-material'
+import Grid from '@mui/material/Grid'
+import Card from '@mui/material/Card'
+import Delete from '@mui/icons-material/Delete'
 import { useRouter } from 'next/router';
 import { NextThunkDispatch } from '../../store'
 import { useDispatch } from 'react-redux'
@@ -46,9 +47,9 @@ const AlbumItem: React.FC<AlbumItemProps> = ({album}) => {
             <div>{album.name}</div>
             <div className={stylesList.countTrack}>Кол-во треков: {album.tracks.length}</div>
         </Grid>
-        <IconButton onClick={delet} style={{marginLeft: 'auto'}}>
+        <div onClick={delet} style={{marginLeft: 'auto'}}>
             <Delete className={stylesList.deleteAlbumIt}/>
-        </IconButton>
+        </div>
     </Card>
   )
 }

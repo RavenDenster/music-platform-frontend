@@ -1,5 +1,6 @@
-import { Card, Grid } from '@mui/material'
-import { Box } from '@mui/system'
+import Grid from '@mui/material/Grid'
+import Card from '@mui/material/Card'
+import Box from '@mui/material/Box';
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import AlbumLogin from '../../components/AlbumLogin'
