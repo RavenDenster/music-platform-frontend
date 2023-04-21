@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import { useTypedSelector } from '../hooks/useTypedSelector'
 import styles from '../styles/HomePlayer.module.scss'
-import { Pause, PlayArrow, VolumeUp, } from '@mui/icons-material'
+import PlayArrow from '@mui/icons-material/PlayArrow';
+import Pause from '@mui/icons-material/Pause';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import { IconButton } from '@mui/material';
