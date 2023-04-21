@@ -25,8 +25,6 @@ const HomePlayer = () => {
         }
     }, [playerTrack])
 
-
-
     const changeTrack = async (prev) => {
         if (tracks.length) {
             console.log(playerTrack, tracks)
@@ -75,6 +73,8 @@ const HomePlayer = () => {
         audioHome.volume = Number(e.target.value) / 100
         dispatch(changeVolumePlay(Number(e.target.value)))
     }
+
+    
  
   return (
     <div className={styles.player}>
