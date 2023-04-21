@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useTypedSelector } from '../hooks/useTypedSelector'
 import styles from '../styles/HomePlayer.module.scss'
 import PlayArrow from '@mui/icons-material/PlayArrow';
@@ -16,7 +16,7 @@ const HomePlayer = () => {
   const { pauseHome, playerTrack, volumeHome, tracks, token } = useTypedSelector(state => state.musicHome) 
   const dispatch = useDispatch()
   const dispatc = useDispatch() as NextThunkDispatch
-  console.log(pauseHome, audioHome)
+
     useEffect(() => {
         if(!audioHome) {
             audioHome = new Audio()
@@ -56,7 +56,6 @@ const HomePlayer = () => {
     }
 
     const play = () => {
-        console.log(pauseHome, audioHome)
         if (pauseHome) {
             setTimeout(function () {      
                 dispatch(changeHomePlay())
@@ -76,7 +75,8 @@ const HomePlayer = () => {
     }
  
   return (
-    <div className={styles.player}>
+    <>
+    {playerTrack.id && <div className={styles.player}>
         <div className={styles.track}> 
             <div className="trackImage">
                 <img src={playerTrack.image} alt="currentPlaying" />
@@ -84,7 +84,7 @@ const HomePlayer = () => {
                 <div className={styles.trackInfo}>
                 <div className={styles.trackInfoTrackName}>{playerTrack.name}</div>
                 <div className={styles.trackInfoTrackArtists}>
-                    {playerTrack.artists.join(", ")}
+                    {playerTrack.id && playerTrack.artists.join(", ")}
                 </div>
             </div>
         </div>
@@ -108,7 +108,8 @@ const HomePlayer = () => {
         <div className={styles.value}>
             <input className={styles.inputRange} type="range" onChange={changeVolume} value={volumeHome} min={0} max={100} />
         </div>
-    </div>
+    </div>}
+    </>
   )
 }
 

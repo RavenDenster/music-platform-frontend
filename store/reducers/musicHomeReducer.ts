@@ -8,7 +8,7 @@ const initialState: MusicHomeState = {
     tracks: {},
     selectGenre: {href: 'https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFDXXwE9BDJAr', icons: Array(1), id: '0JQ5DAqbMKFDXXwE9BDJAr', name: 'Rock'},
     selectAlbum: {id: '37i9dQZF1DXcF6B6QPhFDv', name: 'Rock This', description: "Nothing But Thieves along with today's Rock songs you need to hear.", image: 'https://i.scdn.co/image/ab67706f00000003c02bfd2d13e8c5784e0390f5', tracks: {href: 'https://api.spotify.com/v1/playlists/37i9dQZF1DXcF6B6QPhFDv/tracks', total: 50}},
-    playerTrack: {id: '0ZImVxesVZIydOnwTMSWOK', name: 'Welcome to the DCC', artists: ['Nothing But Thieves'], image: 'https://i.scdn.co/image/ab67616d0000485167b6e438b2d1dfec09918926', previewUrl: "https://p.scdn.co/mp3-preview/0f1dc1b19b47e750a22135610ea626b12b7bb17f?cid=1a9fe9f1a0fe46c59e704483e305cb7f"},
+    playerTrack: {},
     pauseHome: false,
     volumeHome: 50,
 }
