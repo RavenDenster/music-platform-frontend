@@ -91,9 +91,9 @@ const HomePlayer = () => {
             </div>
             <div className="state">
                 <IconButton onClick={play}>
-                    {/* {!pauseHome
+                    {!pauseHome
                     ? <Pause sx={{color: 'white'}}/>
-                    : <PlayArrow sx={{color: 'white'}}/>} */}
+                    : <PlayArrow sx={{color: 'white'}}/>}
                 </IconButton>
             </div>
             <div className="next">

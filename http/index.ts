@@ -1,4 +1,6 @@
 import axios from 'axios'
+// https://music-platform-backend-delta.vercel.app/
+// http://localhost:5000/
 
 export const SERVER_URL = `https://music-platform-backend-delta.vercel.app/`
 export const API_URL = `${SERVER_URL}auth`
