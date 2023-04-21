@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import StepWrapper from '../../components/StepWrapper'
 import MainLayout from '../../layouts/MainLayout'
-import { Grid, Button, TextField } from '@mui/material';
+import Button from '@mui/material/Button'
+import TextField from '@mui/material/TextField'
+import Grid from '@mui/material/Grid'
 import FileUpload from '../../components/FileUpload';
 import { useInput } from '../../hooks/useInput';
 import { useRouter } from 'next/router';

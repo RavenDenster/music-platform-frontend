@@ -1,5 +1,9 @@
-import { Button, Card, createTheme, Grid, PaginationItem, TextField } from '@mui/material'
-import { Box } from '@mui/system'
+import Button from '@mui/material/Button'
+import Card from '@mui/material/Card'
+import Grid from '@mui/material/Grid'
+import PaginationItem from '@mui/material/PaginationItem'
+import TextField from '@mui/material/TextField'
+import Box from '@mui/material/Box';
 import { useRouter } from 'next/router'
 import React, {useEffect, useState} from 'react'
 import { useDispatch } from 'react-redux'

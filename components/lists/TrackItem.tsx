@@ -1,8 +1,11 @@
 import React from 'react'
 import { ITrack } from '../../types/track'
 import styles from '../../styles/TrackItem.module.scss'
-import { Card, IconButton, Grid } from '@mui/material';
-import {Delete, Pause, PlayArrow} from '@mui/icons-material'
+import Card from '@mui/material/Card';
+import Grid from '@mui/material/Grid';
+import Delete from '@mui/icons-material/Delete'
+import Pause from '@mui/icons-material/Pause'
+import PlayArrow from '@mui/icons-material/PlayArrow'
 import { useRouter } from 'next/router';
 import { useActions } from '../../hooks/useActions';
 import { deleteTracks } from '../../store/actions-creators/track';
@@ -34,20 +37,20 @@ const TrackItem: React.FC<TrackItemProps> = ({track, active = false}) => {
  
   return (
       <Card className={styles.track} onClick={() => router.push('/tracks/' + track._id)}>
-          <IconButton onClick={play}>
+          <div onClick={play}>
             {active
               ? <Pause className={stylesList.pauseTrackIt}/>
               : <PlayArrow className={stylesList.pauseTrackIt}/>}
-          </IconButton>
+          </div>
           <img width={70} height={70} src={`${SERVER_URL}` + track.picture} />
           <Grid container direction='column' className={stylesList.gridTrackIt}>
               <div>{track.name}</div>
               <div className={stylesList.artistTrackIt}>{track.artist}</div>
           </Grid>
           {active && <div>02:42 / 03:22</div>}
-          <IconButton onClick={delet} style={{marginLeft: 'auto'}}>
+          <div onClick={delet} style={{marginLeft: 'auto'}}>
               <Delete className={stylesList.deleteAlbumIt}/>
-          </IconButton>
+          </div>
       </Card>
   )
 }
