@@ -74,9 +74,9 @@ const HomePlayer = () => {
         dispatch(changeVolumePlay(Number(e.target.value)))
     }
 
-    // if(!audioHome) {
-    //     return (<div></div>)
-    //   }
+    if(!audioHome) {
+        return (<div></div>)
+      }
  
   return (
     <div className={styles.player}>
@@ -101,7 +101,9 @@ const HomePlayer = () => {
                     {/* {!pauseHome
                     ? <Pause sx={{color: 'white'}}/>
                     : <PlayArrow sx={{color: 'white'}}/>} */}
-                   <PlayArrow sx={{color: 'white'}}/>
+                      {!pauseHome
+                    ? <div>+</div>
+                    : <div>-</div>}
                 </IconButton>
             </div>
             <div className="next">
