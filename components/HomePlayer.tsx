@@ -74,9 +74,9 @@ const HomePlayer = () => {
         dispatch(changeVolumePlay(Number(e.target.value)))
     }
 
-    if(!audioHome) {
-        return (<div></div>)
-      }
+    // if(!audioHome) {
+    //     return (<div></div>)
+    //   }
  
   return (
     <div className={styles.player}>
