@@ -75,9 +75,9 @@ const Player = () => {
       <div className={styles.player}>
         <Box className={styles.play}>
           <IconButton onClick={play}>
-            {!pause
+            {/* {!pause
               ? <Pause className={stylesList.pauseTrackIt}/>
-              : <PlayArrow className={stylesList.pauseTrackIt}/>}
+              : <PlayArrow className={stylesList.pauseTrackIt}/>} */}
           </IconButton>
           <Grid container direction='column' className={stylesList.gridAlbumIt}>
               <div className={styles.name}>{active?.name}</div>
