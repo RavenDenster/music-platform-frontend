@@ -74,23 +74,23 @@ const Player = () => {
     <div className={styles.wrapperplayer}>
       <div className={styles.player}>
         <Box className={styles.play}>
-          <IconButton onClick={play}>
+          {/* <IconButton onClick={play}>
             {!pause
               ? <Pause className={stylesList.pauseTrackIt}/>
               : <PlayArrow className={stylesList.pauseTrackIt}/>}
-          </IconButton>
+          </IconButton> */}
           <Grid container direction='column' className={stylesList.gridAlbumIt}>
               <div className={styles.name}>{active?.name}</div>
               <div className={styles.artist}>{active?.artist}</div>
           </Grid>
         </Box>
-        {/* <Box className={styles.timeTrack}>
-          <TrackProgress left={currentTime} right={duration} onChange={changeCurrentTime}/>
+        <Box className={styles.timeTrack}>
+          {/* <TrackProgress left={currentTime} right={duration} onChange={changeCurrentTime}/> */}
         </Box>
         <Box className={styles.sound}>
           <VolumeUp className={stylesCom.volume}/>
-          <TrackProgress left={volume} right={100} onChange={changeVolume}/>
-        </Box> */}
+          {/* <TrackProgress left={volume} right={100} onChange={changeVolume}/> */}
+        </Box>
       </div>
     </div>
   )
