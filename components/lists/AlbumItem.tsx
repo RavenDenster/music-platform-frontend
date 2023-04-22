@@ -44,7 +44,7 @@ const AlbumItem: React.FC<AlbumItemProps> = ({album}) => {
     <Card className={styles.track} onClick={() => router.push('/albums/' + album._id)}>
         <img width={70} height={70} src={`${SERVER_URL}` + album.picture} />
         <Grid container direction='column' className={stylesList.gridAlbumIt}>
-            <div>{album.name}</div>
+            <div style={{color: 'white'}}>{album.name}</div>
             <div className={stylesList.countTrack}>Кол-во треков: {album.tracks.length}</div>
         </Grid>
         <div onClick={delet} style={{marginLeft: 'auto'}}>

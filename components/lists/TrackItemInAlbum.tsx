@@ -49,7 +49,7 @@ const TrackItemInAlbum: React.FC<TrackItemProps> = ({track, active = false, albu
         </div>
         <img width={70} height={70} src={`${SERVER_URL}` + track.picture} />
         <Grid container direction='column' className={stylesList.gridTrackIt}>
-            <div>{track.name}</div>
+            <div style={{color: 'white'}}>{track.name}</div>
             <div className={stylesList.artistTrackIt}>{track.artist}</div>
         </Grid>
         {active && <div>02:42 / 03:22</div>}

@@ -28,7 +28,7 @@ const AlbumPage = ({serverAlbum}) => {
 
   return (
     <MainLayout title={'Музыкальная площадка - ' + album.name} keywords={'музыка, артисты, ' + album.name}>
-    <Grid container justifyContent={{xs: 'center', md: 'space-around'}}>
+    <Grid container alignItems='center' justifyContent={{xs: 'center', md: 'space-around'}}>
     <Link className={styles.link} href={'/albums'}>
         <Button
           variant={'outlined'}
