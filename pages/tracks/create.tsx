@@ -89,8 +89,8 @@ const Create = () => {
         }
      </StepWrapper>
      <Grid container justifyContent='space-between'>
-        <Button className={styles.white} disabled={activeStep === 0} onClick={back}>Назад</Button>
-        <Button className={styles.white} onClick={next}>Далее</Button>
+        <Button disabled={activeStep === 0} onClick={back}>Назад</Button>
+        <Button onClick={next}>Далее</Button>
      </Grid>
     </MainLayout>
   )
