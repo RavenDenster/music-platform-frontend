@@ -50,7 +50,7 @@ export const checkAuth = () => {
     return async (dispatch: Dispatch<any>) => {
         dispatch({type: AuthctionTypes.IS_LOADING, payload: true})
         try {
-            const response = await axios.get<any>(`${API_URL}/refresh`, {withCredentials: true})
+            const response = await AuthService.refresh()
             console.log(response)
             localStorage.setItem('token', response.data.token)
             dispatch({type: AuthctionTypes.IS_AUTH, payload: true})
