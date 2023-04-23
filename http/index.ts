@@ -3,7 +3,7 @@ import axios from 'axios'
 // http://localhost:5000/
 // https://music-platform-backend.onrender.com/
 
-export const SERVER_URL = `http://localhost:5000/`
+export const SERVER_URL = `https://music-platform-backend.onrender.com/`
 export const API_URL = `${SERVER_URL}auth`
 
 const $api = axios.create({
